@@ -1,0 +1,13 @@
+Diseñe un programa que permita ingresar de una en una las edades de un
+
+conjunto de personas y muestre luego de cada ingreso:
+
+·         El número de personas mayores de edad.
+
+·         El número de personas menores de edad.
+
+·         La mayor edad ingresada.
+
+·         La menor edad ingresada.
+
+Declare como globales a las variables absolutamente necesarias.
