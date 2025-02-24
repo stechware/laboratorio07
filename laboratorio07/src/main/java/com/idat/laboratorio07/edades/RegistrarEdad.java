@@ -19,7 +19,35 @@ public class RegistrarEdad {
         this.numeroPersonasMayoresEdad = 0;
         this.numeroPersonasMenoresEdad = 0;
         this.mayorEdadIngresada = 0;
-        this.menorEdadIngresada = 0;
+        this.menorEdadIngresada = 120;
+    }
+    
+    public void registrar(int edad){
+        
+        if(edad >= 18){
+            numeroPersonasMayoresEdad ++;
+        }else{
+            numeroPersonasMenoresEdad ++;
+        }
+        
+        if(edad > mayorEdadIngresada){
+            mayorEdadIngresada = edad;
+        }
+        if(edad < menorEdadIngresada){
+            menorEdadIngresada = edad;
+        }
+        System.out.println("===========================");
+        System.out.println("Edad Ingresada :"+edad);
+        reporte();        
+    }
+    
+    public void reporte(){
+        
+        System.out.println("El número de personas mayores de edad : "+numeroPersonasMayoresEdad);
+        System.out.println("El número de personas menores de edad : " +numeroPersonasMenoresEdad);
+        System.out.println("La mayor edad ingresada               : "+mayorEdadIngresada);
+        System.out.println("La menor edad ingresada               : "+menorEdadIngresada);
+   
     }
 
     public int getNumeroPersonasMayoresEdad() {
@@ -54,11 +82,10 @@ public class RegistrarEdad {
         this.menorEdadIngresada = menorEdadIngresada;
     }
 
-    
-/*
+   
     @Override
     public String toString() {
         return "RegistrarEdad{" + "numeroPersonasMayoresEdad=" + numeroPersonasMayoresEdad + ", numeroPersonasMenoresEdad=" + numeroPersonasMenoresEdad + ", mayorEdadIngresada=" + mayorEdadIngresada + ", menorEdadIngresada=" + menorEdadIngresada + '}';
     }
- */    
+     
 }

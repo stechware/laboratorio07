@@ -16,7 +16,13 @@ public class MainRegistrarEdad {
         
         RegistrarEdad registrar = new RegistrarEdad();
         
-        System.out.println(registrar);
+        //System.out.println(registrar);
+        
+        registrar.registrar(10);
+        registrar.registrar(18);
+        registrar.registrar(50);
+        registrar.registrar(5);
+        registrar.registrar(20);
         
     }
     
