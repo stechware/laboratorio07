@@ -37,6 +37,7 @@ public class MainRegistrarEdad {
             edadIngresada = scanner.nextInt();
             if (edadIngresada == 0){
                 bandera =false;
+                continue;
             }
             registrar.registrar(edadIngresada); 
             
