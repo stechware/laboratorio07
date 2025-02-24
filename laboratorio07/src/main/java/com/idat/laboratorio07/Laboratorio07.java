@@ -11,6 +11,6 @@ package com.idat.laboratorio07;
 public class Laboratorio07 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Hola desde Github. Aprendiendo PULL");
     }
 }
